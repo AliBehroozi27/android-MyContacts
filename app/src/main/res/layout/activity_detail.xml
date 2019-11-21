@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    android:fitsSystemWindows="true"
+    tools:context="com.mycontacts.activities.DetailActivity">
+
+    <ImageView
+        android:id="@+id/iv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/iv_big_height"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/ic_person"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margin_by"
+        android:layout_marginLeft="@dimen/et_margin_by"
+        android:layout_marginTop="@dimen/et_margin_top_DA"
+        android:layout_marginEnd="@dimen/et_margin_by"
+        android:layout_marginRight="@dimen/et_margin_by"
+        android:ems="10"
+        android:gravity="left"
+        android:maxLines="1"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/tv_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_contact" />
+
+    <View
+        android:id="@+id/sep1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="@dimen/sep_margin_by"
+        android:layout_marginLeft="@dimen/sep_margin_by"
+        android:layout_marginTop="@dimen/sep_margin_top"
+        android:layout_marginEnd="@dimen/sep_margin_top"
+        android:layout_marginRight="@dimen/sep_margin_top"
+        android:background="@color/sep_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+
+    <TextView
+        android:id="@+id/et_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margin_by"
+        android:layout_marginLeft="@dimen/et_margin_by"
+        android:layout_marginTop="@dimen/et_margin_top_DA"
+        android:layout_marginEnd="@dimen/et_margin_by"
+        android:layout_marginRight="@dimen/et_margin_by"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/tv_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+
+    <View
+        android:id="@+id/sep2"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="@dimen/sep_margin_by"
+        android:layout_marginLeft="@dimen/sep_margin_by"
+        android:layout_marginTop="@dimen/sep_margin_top"
+        android:layout_marginEnd="@dimen/sep_margin_top"
+        android:layout_marginRight="@dimen/sep_margin_top"
+        android:background="@color/sep_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_number" />
+
+    <TextView
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margin_by"
+        android:layout_marginLeft="@dimen/et_margin_by"
+        android:layout_marginTop="@dimen/et_margin_top_DA"
+        android:layout_marginEnd="@dimen/et_margin_by"
+        android:layout_marginRight="@dimen/et_margin_by"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/tv_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_number" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margin_by"
+        android:layout_marginLeft="@dimen/et_margin_by"
+        android:layout_marginEnd="@dimen/et_margin_by"
+        android:layout_marginRight="@dimen/et_margin_by"
+        android:layout_marginBottom="@dimen/et_margin_top_2"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_evaluation"
+        app:cardMaxElevation="@dimen/et_margin_top_2"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="@dimen/content_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <ImageView
+                android:id="@+id/iv_call"
+                android:layout_width="@dimen/iv_width_DA"
+                android:layout_height="@dimen/iv_height_DA"
+                android:layout_marginStart="@dimen/iv_margin_by"
+                android:layout_marginLeft="@dimen/iv_margin_by"
+                android:layout_marginEnd="@dimen/iv_margin_by"
+                android:layout_marginRight="@dimen/iv_margin_by"
+                android:layout_weight="1"
+                android:background="@drawable/ic_call" />
+
+            <View
+                android:layout_width="@dimen/v_empty_width"
+                android:layout_height="@dimen/v_empty_height"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_message"
+                android:layout_width="@dimen/iv_width_DA"
+                android:layout_height="@dimen/iv_height_DA"
+                android:layout_marginStart="@dimen/iv_margin_by"
+                android:layout_marginLeft="@dimen/iv_margin_by"
+                android:layout_marginEnd="@dimen/iv_margin_by"
+                android:layout_marginRight="@dimen/iv_margin_by"
+                android:layout_weight="1"
+                android:background="@drawable/ic_message" />
+
+            <View
+                android:layout_width="@dimen/v_empty_width"
+                android:layout_height="@dimen/v_empty_height"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="@dimen/iv_width_DA"
+                android:layout_height="@dimen/iv_height_DA"
+                android:layout_marginStart="@dimen/iv_margin_by"
+                android:layout_marginLeft="@dimen/iv_margin_by"
+                android:layout_marginEnd="@dimen/iv_margin_by"
+                android:layout_marginRight="@dimen/iv_margin_by"
+                android:layout_weight="1"
+                android:background="@drawable/ic_delete_gray" />
+
+            <View
+                android:layout_width="@dimen/v_empty_width"
+                android:layout_height="@dimen/v_empty_height"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:layout_width="@dimen/iv_width_DA"
+                android:layout_height="@dimen/iv_height_DA"
+                android:layout_marginStart="@dimen/iv_margin_by"
+                android:layout_marginLeft="@dimen/iv_margin_by"
+                android:layout_marginEnd="@dimen/iv_margin_by"
+                android:layout_marginRight="@dimen/iv_margin_by"
+                android:layout_weight="1"
+                android:background="@drawable/ic_edit" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_f_height"
+        android:layout_marginEnd="@dimen/et_margin_top_2"
+        android:layout_marginRight="@dimen/et_margin_top_2"
+        android:background="@color/colorAccent"
+        android:scaleType="center"
+        android:src="@drawable/ic_favorite_not"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.mycontacts.activities.EditActivity">
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/iv_contact"
+        android:layout_width="@dimen/civ_width_EA"
+        android:layout_height="@dimen/civ_width_EA"
+        android:layout_marginStart="@dimen/et_margin_top_2"
+        android:layout_marginLeft="@dimen/et_margin_top_2"
+        android:layout_marginTop="@dimen/civ_margin_top"
+        android:layout_marginEnd="@dimen/et_margin_top_2"
+        android:layout_marginRight="@dimen/et_margin_top_2"
+        android:src="@drawable/ic_person"
+        app:border="true"
+        app:border_color="@color/cardview_light_background"
+        app:border_width="@dimen/civ_border_width"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shadow="true" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/name_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margin_by"
+        android:layout_marginTop="@dimen/etl_margin_top"
+        android:layout_marginEnd="@dimen/et_margin_by"
+        android:layout_marginRight="@dimen/et_margin_by"
+        app:layout_constraintTop_toBottomOf="@+id/iv_contact"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="20"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/number_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margin_by"
+        android:layout_marginTop="@dimen/etl_margin_top"
+        android:layout_marginEnd="@dimen/et_margin_by"
+        android:layout_marginRight="@dimen/et_margin_by"
+        app:layout_constraintTop_toBottomOf="@+id/name_lay"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="20"
+            android:hint="@string/number"
+            android:inputType="text"
+            android:maxLines="1"
+            tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/email_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margin_by"
+        android:layout_marginTop="@dimen/etl_margin_top"
+        android:layout_marginEnd="@dimen/et_margin_by"
+        android:layout_marginRight="@dimen/et_margin_by"
+        app:layout_constraintTop_toBottomOf="@+id/number_lay"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="20"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/b_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margin_by"
+        android:layout_marginEnd="@dimen/et_margin_by"
+        android:layout_marginRight="@dimen/et_margin_by"
+        android:layout_marginBottom="@dimen/et_margin_by"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="@dimen/et_margin_top_2"
+        android:background="@color/colorAccent"
+        android:scaleType="center"
+        android:src="@drawable/ic_menu_camera"
+        app:layout_constraintEnd_toEndOf="@id/iv_contact"
+        app:layout_constraintTop_toTopOf="@id/iv_contact" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,46 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="item_list_horizontal_margin">10dp</dimen>
+    <dimen name="tv_margin_top">150dp</dimen>
+    <dimen name="tv_text_size">20sp</dimen>
+    <dimen name="et_margin_by">40dp</dimen>
+    <dimen name="et_margin_top">20dp</dimen>
+    <dimen name="et_margin_top_2">8dp</dimen>
+    <dimen name="b_margin_bellow">40dp</dimen>
+    <dimen name="et_margin_top_DA">50dp</dimen>
+    <dimen name="sep_margin_by">50dp</dimen>
+    <dimen name="sep_margin_top">15dp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="card_evaluation">2dp</dimen>
+    <dimen name="content_padding">7dp</dimen>
+    <dimen name="iv_width_DA">20dp</dimen>
+    <dimen name="iv_height_DA">30dp</dimen>
+    <dimen name="iv_margin_by">10dp</dimen>
+    <dimen name="v_empty_width">10dp</dimen>
+    <dimen name="v_empty_height">10dp</dimen>
+    <dimen name="iv_big_height">250dp</dimen>
+    <dimen name="fab_f_height">220dp</dimen>
+    <dimen name="civ_width_EA">150dp</dimen>
+    <dimen name="civ_margin_top">50dp</dimen>
+    <dimen name="civ_border_width">2dp</dimen>
+    <dimen name="etl_margin_top">20dp</dimen>
+    <dimen name="tv_margin_bottom">140dp</dimen>
+    <dimen name="iv_width_SA">300dp</dimen>
+    <dimen name="civ_width_item">56dp</dimen>
+    <dimen name="tv_height_search">29dp</dimen>
+    <dimen name="tv_padding_bottom">4dp</dimen>
+    <dimen name="tv_text_size_search">16sp</dimen>
+    <dimen name="iv_nav_width">120dp</dimen>
+    <dimen name="civ_item_margin_top">12dp</dimen>
+    <dimen name="civ_item_margin_by">12dp</dimen>
+    <dimen name="civ_item_margin_top_lv">5dp</dimen>
+    <dimen name="text_size_item_lv">17sp</dimen>
+    <dimen name="iv_width_item">30dp</dimen>
+</resources>

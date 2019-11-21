@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.mycontacts.activities.SplashActivity">
+
+    <ImageView
+        android:layout_width="@dimen/iv_width_SA"
+        android:layout_height="@dimen/iv_width_SA"
+        android:layout_marginStart="@dimen/et_margin_top_2"
+        android:layout_marginLeft="@dimen/et_margin_top_2"
+        android:layout_marginTop="@dimen/et_margin_top_2"
+        android:layout_marginEnd="@dimen/et_margin_top_2"
+        android:layout_marginRight="@dimen/et_margin_top_2"
+        android:layout_marginBottom="@dimen/et_margin_top_2"
+        android:background="@drawable/ic_splsh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

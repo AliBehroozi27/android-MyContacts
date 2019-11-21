@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="groups">
+        <menu>
+            <item
+                android:id="@+id/nav_favorites"
+                android:icon="@drawable/ic_favorite"
+                android:title="favorite contacts" />
+        </menu>
+    </item>
+
+    <item android:title="actions">
+        <menu>
+            <item
+                android:id="@+id/nav_sync"
+                android:icon="@drawable/ic_sync"
+                android:title="sync contacts" />
+            <item
+                android:id="@+id/nav_changePassword"
+                android:icon="@drawable/ic_lock"
+                android:title="password setting" />
+        </menu>
+    </item>
+
+</menu>
