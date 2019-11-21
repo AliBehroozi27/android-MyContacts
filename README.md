@@ -1,7 +1,7 @@
 # android-MyContacts
 #### a contact manager app
 
-##### featurs:
+#### features:
 - setting password.
 - importing contacts from phone.
 - direct call and message.
